@@ -559,7 +559,7 @@ echo -ne "
 "
 # Graphics Drivers find and install
 if echo "${gpu_type}" | grep -E "NVIDIA|GeForce"; then
-    echo "Installing NVIDIA drivers: nvidia-lts"
+    echo "Installing NVIDIA drivers: nvidia"
     pacman -S --noconfirm --needed nvidia
 elif echo "${gpu_type}" | grep 'VGA' | grep -E "Radeon|AMD"; then
     echo "Installing AMD drivers: xf86-video-amdgpu"
